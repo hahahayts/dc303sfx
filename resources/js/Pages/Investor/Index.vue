@@ -89,7 +89,7 @@ const getInvestmentTypeColor = (type) => {
                 >
                     <div class="border-b border-gray-200 bg-gray-50 px-6 py-4">
                         <h2 class="text-lg font-semibold text-gray-800">
-                            {{ investor.first_name }} {{ investor.last_name }}
+                            {{ investor.last_name }}, {{ investor.first_name }}
                         </h2>
                     </div>
                     <div class="p-6 space-y-4">

@@ -8,7 +8,7 @@ const form = useForm({
     last_name: "",
     first_name: "",
     address: "",
-    investor_type: "",
+    investment_type: "",
     phone: "",
 });
 
@@ -135,7 +135,7 @@ const submit = () => {
                             </label>
                             <select
                                 id="investor_type"
-                                v-model="form.investor_type"
+                                v-model="form.investment_type"
                                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
                             >
                                 <option value="" disabled selected>
@@ -146,10 +146,10 @@ const submit = () => {
                                 <option value="benefactor">Benefactor</option>
                             </select>
                             <p
-                                v-if="form.errors.investor_type"
+                                v-if="form.errors.investment_type"
                                 class="mt-1 text-sm text-red-600"
                             >
-                                {{ form.errors.investor_type }}
+                                {{ form.errors.investment_type }}
                             </p>
                         </div>
                     </div>

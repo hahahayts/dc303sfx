@@ -26,7 +26,7 @@ class InvestorController extends Controller
             'first_name' => 'required',
             'address' => 'required',
             'phone' => 'required',
-            'investor_type' => 'required',
+            'investment_type' => 'required',
         ]);
 
         Investor::create($validated);

@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -18,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/investors', [InvestorController::class, 'index']);
 Route::get('/investors/add',[InvestorController::class, 'create']);
-Route::get('/investors', [InvestorController::class, 'store']);
+Route::post('/investors', [InvestorController::class, 'store']);
 
 
 Route::get('/about', function() {
